@@ -3,4 +3,4 @@
 
  Aprendendo a criar sites com Curso em Video
 
- <a href="https://moisescl011.github.io/html-css/Desafios/desafio010/android#"> Executar o Desafio 10</a>
+ <a href="https://moisescl011.github.io/html-css/Desafios/desafio010/android#" target= "_blank"> Executar o Desafio 10</a>
