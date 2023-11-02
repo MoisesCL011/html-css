@@ -28,7 +28,7 @@
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--cor1);  
+    background-image: linear-gradient(#3ddc84, #1a5c37);
 }
 
 header {
@@ -43,6 +43,7 @@ header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
     text-align: center;
+    padding: 35px;
 }
 
 header > p {
@@ -54,6 +55,7 @@ nav {
     color: var(--cor4);
     padding: 10px;
     margin-top: 20px;
+    
 }
 
 nav a {
