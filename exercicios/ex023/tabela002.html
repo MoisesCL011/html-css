@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,6 +25,16 @@
             color: white;
         }
 
+        thead >tr >th /*colando o cabeçalho da tabela no topo*/{
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        } /*2n-1 = num impar, 2n = num par (odd-impar. even-par*/
+
         tfoot {
             background-color: gray;
             color: white;
@@ -33,6 +44,12 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
     </style>
 </head>
@@ -48,9 +65,10 @@
                 TR,TD,TH
     -->
 <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 100px;">População</th>
     </thead>
 
     <tbody>
@@ -170,7 +188,7 @@
     </tbody>
         
     <tfoot>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>203.062.512</strong></td>
     </tfoot>
 </table>
